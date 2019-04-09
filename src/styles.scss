@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* Vendors */
+
+/* Helpers */
+@import 'assets/scss/helpers/variables';
+
+/* Base */
+@import 'assets/scss/base/typography';
+@import 'assets/scss/base/general';
+
+/* Components */
+@import 'assets/scss/components/buttons';
+@import 'assets/scss/components/home-cover';

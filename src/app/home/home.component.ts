@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({
@@ -9,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class HomeComponent implements OnInit {
+    jobTitle: string;
+    @ViewChild('about') about: ElementRef;
 
-    constructor() { }
 
     ngOnInit() {
+        this.jobTitle = 'Front-end Developer';
+    }
+
+
+    /**
+     * Function executed by the dom that scrolls down to an specific section in home page
+     * @param section string with the name of the section to scroll to
+     */
+    scrollTo( section: string ) {
+        switch ( section ) {
+            case 'about':
+                this.about.nativeElement.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+                break;
+        }
     }
 }

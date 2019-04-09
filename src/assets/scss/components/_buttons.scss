@@ -1,0 +1,10 @@
+.btn {
+    display: inline-block;
+
+    &.scroll {
+        background: url('assets/images/icon-down.png');
+        height: 16px;
+        width: 28px;
+        text-indent: -9999999px;
+    }
+}
