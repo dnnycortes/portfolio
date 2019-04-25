@@ -1,0 +1,20 @@
+<div class="about">
+    <img src="assets/images/cv-picture.png" alt="daniela-munoz-frontend">
+    <div class="title">
+        <h2>{{ aboutTitle }}</h2>
+        <a href="javascript:void(0)" class="btn scroll-down-secondary" (click)="onScroll('portfolio')"></a>
+    </div>
+    <div class="about-me">
+        <div class="resume">
+            <h2 class="job-title"> {{ jobTitle }}</h2>
+            <p>{{ aboutIntro }}</p>
+        </div>
+        <div class="skills">
+            <h2 class="job-title">{{ skillsTitle }}</h2>
+            <ul>
+                <li *ngFor="let skill of technicalSkills"> {{ skill.name }} </li>
+            </ul>
+        </div>
+        <a href="assets/images/cv-daniela-frontend.pdf" target="_link" class="btn main">Descarga mi CV</a>
+    </div>
+</div>
