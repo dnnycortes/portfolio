@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
     aboutIntro: string;
     skillsTitle: string;
     technicalSkills: Array<Object>;
-    @Output() scrollDown: EventEmitter = new EventEmitter;
+    @Output() scrollDown: EventEmitter<string> = new EventEmitter;
 
     ngOnInit() {
         this.aboutTitle = 'Quién soy';
@@ -43,7 +43,7 @@ export class AboutComponent implements OnInit {
         ];
     }
 
-    onScroll ( section ) {
+    onScroll ( section: string ) {
         this.scrollDown.emit( section );
     }
 

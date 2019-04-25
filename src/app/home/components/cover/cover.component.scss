@@ -1,0 +1,66 @@
+@import "~assets/scss/helpers/variables";
+
+:host {
+
+    .cover {
+        align-items: center;
+        background: url('/assets/images/background-heart.png') $sec-color no-repeat 50% 35%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        width: 100%;
+    
+        .job-title {
+            color: $main-color;
+            flex-grow: 1;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+    
+        .logo {
+            animation-duration: 2s;
+            animation-name: slidedown;
+            color: white;
+            flex-grow: 1;
+            font-family: $main-font;
+            font-size: 89px;
+            font-weight: lighter;
+            line-height: 97px;
+            margin: 0;
+            max-width: 305px;
+            text-align: center;
+        }
+    
+        @keyframes slidedown {
+            from {
+                margin-top: -100px;
+                opacity: 0;
+            }
+            to {
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+    
+        @-webkit-keyframes slidedown {
+            from {
+                margin-top: -100px;
+                opacity: 0;
+            }
+            to {
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+    
+        .btn {
+            &.scroll-down {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRouting } from './home.routing';
 import { AboutComponent } from './components/about/about.component';
+import { CoverComponent } from './components/cover/cover.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AboutComponent } from './components/about/about.component';
     ],
     declarations: [
         HomeComponent,
-        AboutComponent
+        AboutComponent,
+        CoverComponent
     ]
 })
 
