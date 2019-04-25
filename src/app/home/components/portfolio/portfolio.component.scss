@@ -14,5 +14,54 @@
             font-size: 4.5rem;
             font-weight: normal;
         }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: -3px;
+                overflow: hidden;
+                position: relative;
+                width: 25%;
+
+                img {
+                    transition: all 1s ease;
+                    width: 100%;
+                }
+
+                a {
+                    background: url('/assets/images/icon-more.png') no-repeat 50% 55% rgba(0, 0, 0, 0.4);
+                    bottom: 0;
+                    color: white;
+                    display: inline-block;
+                    left: 0;
+                    opacity: 0;
+                    padding-top: 70px;
+                    position: absolute;
+                    right: 0;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    top: 0;
+                    transition: all .4s ease;
+                    width: 100%;
+                }
+
+                &:hover {
+
+                    img {
+                        transform: scale(1.15);
+                    }
+
+                    a {
+                        opacity: 1;
+                        transition: all .4s ease;
+                    }
+                }
+            }
+        }
     }
 }

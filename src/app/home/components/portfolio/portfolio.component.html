@@ -1,3 +1,9 @@
 <div class="my-portfolio">
     <h2>Mi Portfolio</h2>
+    <ul>
+        <li *ngFor="let project of projects">
+            <img src="{{project.image}}" alt="">
+            <a href="javascript:void(0);">{{ project.name }}</a>
+        </li>
+    </ul>
 </div>

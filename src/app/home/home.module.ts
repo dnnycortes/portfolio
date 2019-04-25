@@ -6,6 +6,7 @@ import { HomeRouting } from './home.routing';
 import { AboutComponent } from './components/about/about.component';
 import { CoverComponent } from './components/cover/cover.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { PortfolioService } from './services/portfolio.service';
 
 
 @NgModule({
@@ -18,6 +19,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
         AboutComponent,
         CoverComponent,
         PortfolioComponent
+    ],
+    providers: [
+        PortfolioService
     ]
 })
 
