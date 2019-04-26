@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { CoverComponent } from './components/cover/cover.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { PortfolioService } from './services/portfolio.service';
+import { AboutService } from './services/about.service';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PortfolioService } from './services/portfolio.service';
         PortfolioComponent
     ],
     providers: [
-        PortfolioService
+        PortfolioService,
+        AboutService
     ]
 })
 

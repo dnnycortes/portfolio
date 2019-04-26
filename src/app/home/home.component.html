@@ -1,12 +1,21 @@
 <section>
-    <cover-component (scrollDown)=scrollTo($event)></cover-component>
+    <cover-component
+        [aboutInfo]="aboutInfo"
+        (scrollDown)=scrollTo($event)>
+    </cover-component>
 </section>
 
 
 <section #about>
-    <about-component (scrollDown)="scrollTo($event)" ></about-component>
+    <about-component
+        [aboutInfo]="aboutInfo"
+        [technicalSkills]="technicalSkills"
+        (scrollDown)="scrollTo($event)">
+    </about-component>
 </section>
 
 <section #portfolio>
-    <portfolio-component></portfolio-component>
+    <portfolio-component
+        [projects]="projects">
+    </portfolio-component>
 </section>

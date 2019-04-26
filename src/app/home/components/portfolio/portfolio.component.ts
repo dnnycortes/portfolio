@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-import { PortfolioService } from '../../services/portfolio.service';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -10,27 +8,6 @@ import { PortfolioService } from '../../services/portfolio.service';
 })
 
 
-export class PortfolioComponent implements OnInit {
-    projects: Array<any>;
-
-    constructor(
-        private portfolioService: PortfolioService
-    ) {}
-
-    ngOnInit() {
-        this.getPortfolioProjects();
-    }
-
-    getPortfolioProjects() {
-        this.portfolioService.getProjects().subscribe( data => {
-            this.projects = data.map( e => {
-                return {
-                    id: e.payload.doc.id,
-                    ...e.payload.doc.data()
-                };
-            });
-        });
-
-    }
-
+export class PortfolioComponent {
+    @Input() projects: Array<Object>;
 }

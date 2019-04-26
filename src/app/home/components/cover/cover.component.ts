@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 
 @Component({
@@ -8,15 +8,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 
 
-export class CoverComponent implements OnInit {
-    jobTitle: string;
-    name: string;
+export class CoverComponent {
+    @Input() aboutInfo: Object;
     @Output() scrollDown: EventEmitter<string> = new EventEmitter;
-
-    ngOnInit() {
-        this.jobTitle = 'Front-end Developer';
-        this.name = 'Daniela Muñoz';
-    }
 
     onScroll( section: string ) {
         this.scrollDown.emit( section );
