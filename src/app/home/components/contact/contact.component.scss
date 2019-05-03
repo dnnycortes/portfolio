@@ -1,0 +1,53 @@
+@import "~assets/scss/helpers/variables";
+
+:host {
+
+    .contact {
+        display: flex;
+        height: 100%;
+        position: relative;
+        width: 100%;
+
+        .title {
+            align-items: center;
+            background: $sec-color;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            width: 50%;
+    
+            h2 {
+                color: white;
+                font-family: $main-font;
+                font-size: 6rem;
+                font-weight: lighter;
+                margin: 0;
+            }
+        }
+
+        .contact-me {
+            background-color: $main-color;
+            padding: 5%;
+            width: 40%;
+
+            > p {
+                margin-bottom: $margin * 4;
+            }
+
+            .via {
+
+                p {
+
+                    span {
+                        font-weight: bolder;
+                    }
+
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

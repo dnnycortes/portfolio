@@ -15,7 +15,7 @@ export class AboutService {
      * Function to obtain all technical skills from database
      */
     getTechnicalSkills() {
-        return this.firestore.collection('technical-skills').snapshotChanges().pipe( map( action => {
+        return this.firestore.collection('technical-skills', ref => ref.orderBy('name', 'asc') ).snapshotChanges().pipe( map( action => {
             return action.map( a => {
                 const data = a.payload.doc.data();
                 const id = a.payload.doc.id;

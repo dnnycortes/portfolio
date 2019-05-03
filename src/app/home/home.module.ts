@@ -8,6 +8,7 @@ import { CoverComponent } from './components/cover/cover.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { PortfolioService } from './services/portfolio.service';
 import { AboutService } from './services/about.service';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AboutService } from './services/about.service';
         HomeComponent,
         AboutComponent,
         CoverComponent,
-        PortfolioComponent
+        PortfolioComponent,
+        ContactComponent
     ],
     providers: [
         PortfolioService,
