@@ -1,0 +1,12 @@
+<div class="dialog-head">
+    <h1 mat-dialog-title>{{ data.name }}</h1>
+    <button (click)="closeDialog()"><i class="material-icons">clear</i></button>
+</div>
+<div class="dialog-content">
+    <div class="project-image">
+        <img src="{{ data.imageMain }}">
+    </div>
+    <div class="project-info">
+        <p>{{ data.description }}</p>
+    </div>
+</div>

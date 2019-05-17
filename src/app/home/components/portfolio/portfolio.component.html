@@ -3,7 +3,7 @@
     <ul>
         <li *ngFor="let project of projects">
             <img src="{{project.image}}" alt="">
-            <a href="javascript:void(0);">{{ project.name }}</a>
+            <a href="javascript:void(0);" (click)="showProjectDetail(project)">{{ project.name }}</a>
         </li>
     </ul>
 </div>

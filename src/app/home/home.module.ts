@@ -9,23 +9,30 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { PortfolioService } from './services/portfolio.service';
 import { AboutService } from './services/about.service';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProjectDialogComponent } from '../shared/components/project-dialog/project-dialog.component';
+import { MaterialModule } from '../shared/modules/material.module';
 
 
 @NgModule({
     imports: [
         CommonModule,
-        HomeRouting
+        HomeRouting,
+        MaterialModule
     ],
     declarations: [
         HomeComponent,
         AboutComponent,
         CoverComponent,
         PortfolioComponent,
-        ContactComponent
+        ContactComponent,
+        ProjectDialogComponent
     ],
     providers: [
         PortfolioService,
         AboutService
+    ],
+    entryComponents: [
+        ProjectDialogComponent
     ]
 })
 
