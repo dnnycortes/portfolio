@@ -16,10 +16,11 @@
 
 <section #portfolio>
     <portfolio-component
-        [projects]="projects">
+        [projects]="projects"
+        (scrollDown)="scrollTo($event)">
     </portfolio-component>
 </section>
 
-<section>
+<section #contact>
     <contact-component></contact-component>
 </section>

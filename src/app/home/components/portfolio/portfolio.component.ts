@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectDialogComponent } from '../../../shared/components/project-dialog/project-dialog.component';
 
@@ -12,10 +12,19 @@ import { ProjectDialogComponent } from '../../../shared/components/project-dialo
 
 export class PortfolioComponent {
     @Input() projects: Array<Object>;
+    @Output() scrollDown: EventEmitter<string> = new EventEmitter;
 
     constructor(
         private dialog: MatDialog
     ) {}
+
+
+    /**
+     * Sets and emits the section to scroll down to
+     */
+    onScroll ( section: string ) {
+        this.scrollDown.emit( section );
+    }
 
     /**
      * Function to open a dialog that shows a project detail

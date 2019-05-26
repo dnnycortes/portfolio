@@ -7,6 +7,7 @@
         height: 100%;
         text-align: center;
         padding-top: 50px;
+        position: relative;
 
         h2 {
             margin: 0;
@@ -62,6 +63,11 @@
                     }
                 }
             }
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 4rem;
         }
     }
 }

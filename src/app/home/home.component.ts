@@ -17,6 +17,7 @@ export class HomeComponent  implements OnInit {
     projects: Array<Object>;
     @ViewChild('about') about: ElementRef;
     @ViewChild('portfolio') portfolio: ElementRef;
+    @ViewChild('contact') contact: ElementRef;
 
 
     constructor(
@@ -42,6 +43,9 @@ export class HomeComponent  implements OnInit {
                 break;
             case 'portfolio':
                 this.portfolio.nativeElement.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+                break;
+            case 'contact':
+                this.contact.nativeElement.scrollIntoView( { behavior: 'smooth', block: 'start' } );
                 break;
         }
     }
