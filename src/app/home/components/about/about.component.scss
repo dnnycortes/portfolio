@@ -15,7 +15,7 @@
             right: 0;
             top: 40px;
         }
-    
+
         .title {
             align-items: center;
             background: $main-color;
@@ -30,6 +30,12 @@
                 font-size: 6rem;
                 font-weight: lighter;
                 margin: 0;
+                margin-top: 58%;
+            }
+
+            .btn.scroll-down-secondary {
+                margin-bottom: 1rem;
+                margin-top: auto;
             }
         }
     

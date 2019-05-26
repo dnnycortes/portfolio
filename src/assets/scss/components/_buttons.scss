@@ -2,15 +2,16 @@
     display: inline-block;
 
     &.scroll-down {
-        background: url('assets/images/icon-down.png');
-        height: 16px;
-        width: 28px;
-        text-indent: -9999999px;
+        color: $main-color;
+
+        i {
+            font-size: 2rem;
+        }
     }
 
     &.scroll-down-secondary {
         @extend .scroll-down;
-        background: url('assets/images/icon-down-black.png');
+        color: $sec-color;
     }
 
     &.main {
