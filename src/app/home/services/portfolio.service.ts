@@ -17,7 +17,7 @@ export class PortfolioService {
      * Function to get all portfolio projects from database
      */
     getProjects() {
-        return this.firestore.collection('portfolio-projects').snapshotChanges().pipe( map( action => {
+        return this.firestore.collection( 'portfolio-projects', ref => ref.where('active', '==', true ) ).snapshotChanges().pipe( map( action => {
             return action.map( a => {
                 const data = a.payload.doc.data();
                 const id = a.payload.doc.id;
