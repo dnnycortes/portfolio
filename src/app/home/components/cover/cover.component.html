@@ -1,6 +1,17 @@
-<div class="cover">
-    <h2 class="job-title"><b>{{ aboutInfo?.position }}</b></h2>
-    <h1 class="logo">{{ aboutInfo?.name }}</h1>
+<div class="hero-image">
+    <header>
+        <h1 class="logo">
+            <a routerLink="/home">{{ aboutInfo?.name }}</a>
+        </h1>
+        <button class="btn nav">
+            <i class="material-icons">menu</i>
+        </button>
+    </header>
+
+    <div class="message">
+        <h2>I Make Great Stuff</h2>
+    </div>
+
     <a href="javascript:void(0)" class="btn scroll-down" (click)="onScroll('about')">
         <i class="material-icons">arrow_downward</i>
     </a>

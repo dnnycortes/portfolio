@@ -2,62 +2,53 @@
 
 :host {
 
-    .cover {
+    .hero-image {
         align-items: center;
-        background: url('/assets/images/background-heart.png') $sec-color no-repeat 50% 35%;
+        background: url('/assets/images/star-background.png') no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         height: 100%;
         position: relative;
         width: 100%;
-    
-        .job-title {
-            color: $main-color;
-            flex-grow: 1;
-            font-size: 13px;
-            font-weight: normal;
-            margin: 0;
-            margin-top: 30px;
-            text-transform: uppercase;
-        }
-    
-        .logo {
-            animation-duration: 2s;
-            animation-name: slidedown;
-            color: white;
-            flex-grow: 1;
-            font-family: $main-font;
-            font-size: 89px;
-            font-weight: lighter;
-            line-height: 97px;
-            margin: 0;
-            max-width: 305px;
-            text-align: center;
-        }
-    
-        @keyframes slidedown {
-            from {
-                margin-top: -100px;
-                opacity: 0;
-            }
-            to {
-                margin-top: 0;
-                opacity: 1;
+
+        header {
+            display: flex;
+            padding: 2rem;
+            width: 93%;
+
+            .logo {
+                font-family: $text-font;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
-    
-        @-webkit-keyframes slidedown {
-            from {
-                margin-top: -100px;
-                opacity: 0;
-            }
-            to {
-                margin-top: 0;
-                opacity: 1;
+
+        .message {
+
+            h2 {
+                color: white;
+                font-family: $highlight-font;
+                font-size: 5rem;
+                font-weight: normal;
+                line-height: 5rem;
+                margin-left: -15%;
+                max-width: 225px;
+                text-align: right;
             }
         }
-    
+
         .btn {
+
+            &.nav {
+                margin-left: auto;
+            }
+
             &.scroll-down {
                 margin-bottom: 25px;
             }

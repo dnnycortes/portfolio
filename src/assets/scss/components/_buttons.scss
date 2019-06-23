@@ -1,5 +1,15 @@
 .btn {
+    background: transparent;
+    border: 0;
     display: inline-block;
+
+    &.nav {
+        color: white;
+
+        i {
+            font-size: 2rem;
+        }
+    }
 
     &.scroll-down {
         color: $main-color;
