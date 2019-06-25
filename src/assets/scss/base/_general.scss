@@ -3,8 +3,9 @@ body, html {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: .85rem;
+    color: $dark-color;
+    font-family: $text-font;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
 }

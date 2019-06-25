@@ -1,22 +1,22 @@
 <div class="about">
-    <img src="assets/images/cv-picture.png" alt="daniela-munoz-frontend">
-    <div class="title">
-        <h2>Quién soy</h2>
-        <a href="javascript:void(0)" class="btn scroll-down-secondary" (click)="onScroll('portfolio')">
-            <i class="material-icons">arrow_downward</i>
-        </a>
+    <div class="about-me-picture">
+        <div class="picture">
+            <img src="assets/images/daniela-cortes.png" alt="Daniela Cortés">
+        </div>
     </div>
-    <div class="about-me">
-        <div class="resume">
-            <h2 class="job-title"> {{ aboutInfo?.position }}</h2>
-            <p>{{ aboutInfo?.aboutMe }}</p>
-        </div>
-        <div class="skills">
-            <h2 class="job-title">Habilidades Técnicas</h2>
-            <ul>
-                <li *ngFor="let skill of technicalSkills"> {{ skill.name }} </li>
-            </ul>
-        </div>
-        <a href="assets/images/cv-daniela-frontend.pdf" target="_link" class="btn main">Descarga mi CV</a>
+    <div class="about-me-info">
+        <h2>About me</h2>
+        <h3 class="job-title">{{ aboutInfo?.position }}</h3>
+        <p class="resume">{{ aboutInfo?.aboutMe }}</p>
+        <a href="assets/images/cv-daniela-frontend.pdf" target="_link" class="btn main">Get my resume</a>
+    </div>
+</div>
+
+<div class="about-me">
+    <div class="skills">
+        <h2 class="job-title">Habilidades Técnicas</h2>
+        <ul>
+            <li *ngFor="let skill of technicalSkills"> {{ skill.name }} </li>
+        </ul>
     </div>
 </div>

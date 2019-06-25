@@ -2,6 +2,7 @@
     background: transparent;
     border: 0;
     display: inline-block;
+    @include transition(0.4s);
 
     &.nav {
         color: white;
@@ -25,13 +26,18 @@
     }
 
     &.main {
-        background: $main-color;
-        border-radius: 20px;
-        color: black;
+        border: 1px solid $sec-color;
+        color: $sec-color;
         font-size: .85rem;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 10px 20px;
+        padding: 1rem 2rem;
+
+        &:hover {
+            background: $sec-color;
+            color: white;
+            @include transition(0.4s);
+        }
     }
 }
 
