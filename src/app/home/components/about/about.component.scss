@@ -53,27 +53,5 @@
                 margin-bottom: 3rem;
             }
         }
-    
-        .about-me {
-            background: white;
-            height: 65%;
-            padding: 8% 7%;
-            width: 36%;
-    
-            .skills {
-    
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin: $margin * 2 0 $margin * 2 $margin * 2;
-                    padding: 0;
-    
-                    li {
-                        line-height: 1.5rem;
-                        width: 50%;
-                    }
-                }
-            }
-        }
     }
 }
