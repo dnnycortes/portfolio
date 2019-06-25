@@ -2,52 +2,31 @@
 
 :host {
 
-    .contact {
-        display: flex;
-        height: 100%;
-        position: relative;
-        width: 100%;
+    .section-contact {
+        background: url('/assets/images/star-background.png') no-repeat;
+        background-size: cover;
+        color: white;
+        margin-top: 5rem;
+        padding: 7rem 0;
 
-        .title {
-            align-items: center;
-            background: $sec-color;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            justify-content: center;
-            width: 50%;
-    
-            h2 {
-                color: white;
-                font-family: $highlight-font;
-                font-size: 6rem;
-                font-weight: lighter;
-                margin: 0;
-            }
+        .contact {
+            margin: 0 auto;
+            max-width: 1024px;
         }
 
-        .contact-me {
-            background-color: $main-color;
-            padding: 5%;
-            width: 40%;
+        h2 {
+            font-family: $highlight-font;
+            font-size: 3rem;
+            margin: 0;
+            margin-bottom: 3rem;
+        }
 
-            > p {
-                margin-bottom: $margin * 4;
-            }
+        p {
+            width: 50%;
+        }
 
-            .via {
-
-                p {
-
-                    span {
-                        font-weight: bolder;
-                    }
-
-                    a {
-                        color: black;
-                    }
-                }
-            }
+        a {
+            color: white;
         }
     }
 }
