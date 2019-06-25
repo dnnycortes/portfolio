@@ -20,11 +20,6 @@
         }
     }
 
-    &.scroll-down-secondary {
-        @extend .scroll-down;
-        color: $sec-color;
-    }
-
     &.main {
         border: 1px solid $sec-color;
         color: $sec-color;

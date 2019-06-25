@@ -3,71 +3,46 @@
 :host {
 
     .my-portfolio {
-        background: whitesmoke;
-        height: 100%;
-        text-align: center;
-        padding-top: 50px;
+        //background: whitesmoke;
+        margin: 0 auto;
+        margin-top: 6rem;
+        max-width: 1024px;
         position: relative;
 
         h2 {
             margin: 0;
+            margin-bottom: 3rem;
             font-family: $highlight-font;
             font-size: 4.5rem;
             font-weight: normal;
         }
 
-        ul {
+        .projects-list {
             display: flex;
             flex-wrap: wrap;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            justify-content: space-between;
 
-            li {
-                margin-bottom: -3px;
-                overflow: hidden;
-                position: relative;
-                width: 25%;
-
-                img {
-                    transition: all 1s ease;
-                    width: 100%;
+            .project {
+                display: inline-block;
+                text-align: center;
+                width: 46%;
+                
+                .thumb {
+                    margin-bottom: -3px;
+                    overflow: hidden;
                 }
 
-                a {
-                    background: url('/assets/images/icon-more.png') no-repeat 50% 55% rgba(0, 0, 0, 0.4);
-                    bottom: 0;
-                    color: white;
-                    display: inline-block;
-                    left: 0;
-                    opacity: 0;
-                    padding-top: 70px;
-                    position: absolute;
-                    right: 0;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    top: 0;
-                    transition: all .4s ease;
-                    width: 100%;
+                img {
+                    margin-bottom: -4px;
+                    transition: all 1s ease;
                 }
 
                 &:hover {
-
                     img {
                         transform: scale(1.15);
                     }
-
-                    a {
-                        opacity: 1;
-                        transition: all .4s ease;
-                    }
                 }
             }
-        }
-
-        .btn {
-            position: absolute;
-            bottom: 4rem;
         }
     }
 }

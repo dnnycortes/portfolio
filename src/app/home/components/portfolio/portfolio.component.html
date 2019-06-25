@@ -1,12 +1,12 @@
 <div class="my-portfolio">
-    <h2>Mi Portfolio</h2>
-    <ul>
-        <li *ngFor="let project of projects">
-            <img src="{{project.image}}" alt="">
-            <a href="javascript:void(0);" (click)="showProjectDetail(project)">{{ project.name }}</a>
-        </li>
-    </ul>
-    <a href="javascript:void(0)" class="btn scroll-down-secondary" (click)="onScroll('contact')">
-        <i class="material-icons">arrow_downward</i>
-    </a>
+    <h2>Checkout my work</h2>
+
+    <div class="projects-list">
+        <a class="project" *ngFor="let project of projects" href="javascript:void(0);" (click)="showProjectDetail(project)">
+            <div class="thumb">
+                <img src="{{project.image}}" alt="">
+            </div>
+            <h4>{{ project.name }}</h4>
+        </a>
+    </div>
 </div>
