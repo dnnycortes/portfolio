@@ -7,17 +7,17 @@
         height: 100%;
         margin: 0 auto;
         margin-top: -6rem;
-        max-width: 1024px;
+        max-width: 1280px;
         padding: 3rem 0;
         position: relative;
 
         .about-me-picture {
-            width: 40%;
+            width: 34%;
 
             .picture {
                 background: rgb(142,34,195);
                 background: linear-gradient(180deg, $sec-color 0%, $main-color 100%);
-                max-height: 500px;
+                max-height: 577px;
 
                 img {
                     margin-left: 1.5rem;

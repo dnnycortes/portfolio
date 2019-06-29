@@ -3,29 +3,13 @@
         <h2>Let's get in touch</h2>
         <p>If you want to talk about any particular project don’t hesitate to contact me, I’m currently available for freelance work.</p>
         <a href="mailto:daniela.munozc@gmail.com">daniela.munozc@gmail.com</a>
+
+        <ul class="social-media">
+            <li *ngFor="let social of networking">
+                <a href="{{social.link}}" target="_blank" class="social {{social.name}}">{{ social.label }}</a>
+            </li>
+        </ul>
+        <h4 class="logo">Daniela Cortés</h4>
+        <p class="made-with-love">Made with ♥ and coffee in Mexico City</p>
     </div>
-    <!-- <div class="title">
-        <h2>Contáctame</h2>
-    </div>
-    <div class="contact-me">
-        <p>Si estás interesado en charlar sobre algún proyecto, no dudes en contactarme; actualmente estoy disponible para trabajos freelance.</p>
-        <div class="via">
-            <p>
-                <span>WhatsApp: </span>
-                <a href="tel:4777240315"> 4777240315</a>
-            </p>
-            <p>
-                <span>E-mail: </span>
-                <a href="mailto:daniela.munozc@gmail.com">daniela.munozc@gmail.com</a>
-            </p>
-            <p>
-                <span>GitHub: </span>
-                <a href="https://github.com/dnnycortes" target="_blank">@dnnycortes</a>
-            </p>
-            <p>
-                <span>Bitbucket: </span>
-                <a href="https://bitbucket.org/danycortes/" target="_blank">@danycortes</a>
-            </p>
-        </div>
-    </div> -->
 </div>
