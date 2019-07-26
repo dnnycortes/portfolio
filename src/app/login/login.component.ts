@@ -31,5 +31,15 @@ export class LoginComponent implements OnInit {
                 Validators.required
             ]]
         })
-    } 
+    }
+
+    getError( controlName: string ) {
+        let error = '';
+        const control = this.loginForm.get( controlName );
+
+        if ( control.touched && control.errors ) {
+            error = JSON.stringify( control.errors );
+        }
+        return error;
+    }
 }
