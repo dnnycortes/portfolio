@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormArray, Validators, AbstractControl } from '@angular/forms';
 
 
 @Component({
@@ -9,7 +10,26 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class LoginComponent implements OnInit {
-    constructor() { }
+    loginForm: FormGroup;
+
+    constructor(
+        private formBuilder: FormBuilder
+    ) { }
+
+
     ngOnInit() {
+        this.buildForm();
     }
+
+    buildForm(){
+        this.loginForm = this.formBuilder.group({
+            email: ['', [
+                Validators.required,
+                Validators.email
+            ]],
+            password: ['', [
+                Validators.required
+            ]]
+        })
+    } 
 }
