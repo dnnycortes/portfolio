@@ -21,7 +21,10 @@ export class LoginComponent implements OnInit {
         this.buildForm();
     }
 
-    buildForm(){
+    /**
+     * Function to build a Reactive Form for Login
+     */
+    buildForm() {
         this.loginForm = this.formBuilder.group({
             email: ['', [
                 Validators.required,
@@ -30,16 +33,33 @@ export class LoginComponent implements OnInit {
             password: ['', [
                 Validators.required
             ]]
-        })
+        });
     }
 
-    getError( controlName: string ) {
-        let error = '';
+    /**
+     * Function that analizes if there's a required error in the form
+     * @param controlName string with the name of the control to validate
+     * @return boolean
+     */
+    getRequiredError( controlName: string ): boolean {
         const control = this.loginForm.get( controlName );
 
-        if ( control.touched && control.errors ) {
-            error = JSON.stringify( control.errors );
-        }
-        return error;
+        console.log( control.hasError('required') && control.touched );
+
+        return (
+            control.hasError('required') && control.touched
+        );
+    }
+
+    /**
+     * Function that analizes if there's an email format error
+     * @return boolean
+     */
+    getEmailError(): boolean {
+        const emailControl = this.loginForm.get('email');
+
+        return (
+            emailControl.hasError('email') && emailControl.touched
+        );
     }
 }

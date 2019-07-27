@@ -4,12 +4,13 @@
     <div class="form-group">
         <label for="name">Email</label>
         <input type="email" name="email" formControlName="email">
+        <div *ngIf="getRequiredError('email')">Se requiere email</div>
+        <div *ngIf="getEmailError()">Email inválido</div>
     </div>
-    <span>{{ getError('email')}}</span>
     <div class="form-group">
         <label for="password">Password</label>
         <input type="password" name="password" formControlName="password">
+        <div *ngIf="getRequiredError('password')">Se requiere password</div>
     </div>
-    <span>{{ getError('password')}}</span>
     <button [disabled]="loginForm.invalid">Login</button>
 </form>
