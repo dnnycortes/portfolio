@@ -1,0 +1,11 @@
+.alert {
+    border-radius: 4px;
+    font-size: .85rem;
+    margin-top: .25rem;
+    padding: .3rem .8rem;
+
+    &.error {
+        background: lighten( #f10e2d, 35% );
+        color: #f10e2d;
+    }
+}

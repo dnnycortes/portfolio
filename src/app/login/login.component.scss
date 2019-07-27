@@ -1,0 +1,44 @@
+@import "~assets/scss/helpers/variables";
+
+:host {
+
+    .login-section {
+        align-items: center;
+        background: url('/assets/images/star-background.png') no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .login-card {
+        background: white;
+        border-radius: .4rem;
+        max-width: 320px;
+        min-width: 380px;
+        padding: 2rem;
+
+        h2 {
+            font-family: $highlight-font;
+            font-size: 2.8rem;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .form-group {
+
+        label, input {
+            width: 100%;
+        }
+    }
+
+    .alert {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

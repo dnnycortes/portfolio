@@ -44,8 +44,6 @@ export class LoginComponent implements OnInit {
     getRequiredError( controlName: string ): boolean {
         const control = this.loginForm.get( controlName );
 
-        console.log( control.hasError('required') && control.touched );
-
         return (
             control.hasError('required') && control.touched
         );

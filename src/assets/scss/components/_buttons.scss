@@ -1,6 +1,7 @@
 .btn {
     background: transparent;
     border: 0;
+    border-radius: 4px;
     display: inline-block;
     @include transition(0.4s);
 
@@ -21,9 +22,24 @@
     }
 
     &.main {
+        background: $sec-color;
+        color: white;
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+
+        &:hover {
+            background: $sec-color;
+            color: white;
+            @include transition(0.4s);
+        }
+    }
+
+    &.secondary {
         border: 1px solid $sec-color;
         color: $sec-color;
-        font-size: .85rem;
+        font-size: 1rem;
         text-decoration: none;
         text-transform: uppercase;
         padding: 1rem 2rem;
