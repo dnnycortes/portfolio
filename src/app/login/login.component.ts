@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormArray, Validators, AbstractControl } from '@angular/forms';
 
+import { AuthService } from '../shared/services/auth.service';
+import { Router } from '@angular/router';
+
 
 @Component({
     selector: 'app-login',
@@ -11,9 +14,12 @@ import { FormBuilder, FormGroup, FormArray, Validators, AbstractControl } from '
 
 export class LoginComponent implements OnInit {
     loginForm: FormGroup;
+    loginErrorMessage: String;
 
     constructor(
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
+        private authService: AuthService,
+        private router: Router
     ) { }
 
 
@@ -59,5 +65,19 @@ export class LoginComponent implements OnInit {
         return (
             emailControl.hasError('email') && emailControl.touched
         );
+    }
+
+    /**
+     * Function that tries to Sing In with the user's data added by the login form
+     * @param value object with user's data
+     */
+    onLogin( value ) {
+        this.authService.doLogin( value )
+        .then( res => {
+            this.loginErrorMessage = '';
+            this.router.navigateByUrl('/portfolio-admin');
+        }, err => {
+            this.loginErrorMessage = err.message;
+        });
     }
 }
