@@ -44,3 +44,15 @@
         }
     }
 }
+
+@media screen and ( max-width: $screen-medium ) {
+    :host {
+
+        .hero-image {
+
+            header {
+                padding: 2rem 0;
+            }
+        }
+    }
+}
