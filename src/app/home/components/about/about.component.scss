@@ -55,3 +55,44 @@
         }
     }
 }
+
+@media screen and ( max-width: $screen-medium ) {
+    :host {
+        .about {
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            .about-me-picture {
+                width: 50%;
+            }
+    
+            .about-me-info {
+                padding: 2rem 0 0 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: $screen-small ) {
+    :host {
+
+        .about {
+
+            .about-me-picture {
+                width: 70%;
+            }
+
+            .about-me-info {
+
+                h2 {
+                    font-size: 3.5rem;
+                }
+
+                .btn.main {
+                    width: 74%;
+                }
+            }
+        }
+    }
+}
