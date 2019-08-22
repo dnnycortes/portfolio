@@ -60,3 +60,16 @@
         }
     }
 }
+
+@media screen and ( max-width: $screen-medium ) {
+    :host {
+
+        .section-contact {
+            padding: 4rem 2rem;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
