@@ -1,3 +1,5 @@
+@import "~assets/scss/helpers/variables";
+
 :host {
 
     .dialog-head {
@@ -33,6 +35,22 @@
 
         .project-info {
             width: 50%;
+        }
+    }
+}
+
+@media screen and ( max-width: $screen-medium ) {
+    :host {
+        
+        .dialog-content {
+
+            .project-image {
+                width: 100%;
+            }
+
+            .project-info {
+                width: 100%;
+            }
         }
     }
 }
