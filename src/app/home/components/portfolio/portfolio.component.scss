@@ -45,3 +45,36 @@
         }
     }
 }
+
+@media screen and ( max-width: $screen-medium ) {
+    :host {
+        
+        .my-portfolio {
+            margin-top: 3rem;
+
+            h2 {
+                text-align: center;
+            }
+
+            .projects-list {
+                justify-content: center;
+
+                .project {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: $screen-small ) {
+    :host {
+
+        .my-portfolio {
+
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
