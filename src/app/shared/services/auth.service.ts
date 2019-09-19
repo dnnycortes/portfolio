@@ -14,16 +14,6 @@ export class AuthService {
         this.user$ = this.afAuth.authState;
     }
 
-    do() {
-        firebase.auth().onAuthStateChanged(function(user) {
-            if (user) {
-              // User is signed in.
-            } else {
-              // No user is signed in.
-            }
-          });
-    }
-
     /**
      * Function that connects with firebase auth and signs in
      * @param value Object with email and password data
