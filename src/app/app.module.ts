@@ -10,6 +10,8 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app.routing.module';
+import { AuthService } from './shared/services/auth.service';
+import { AuthGuard } from './shared/guards/auth.guard';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { AppRoutingModule } from './app.routing.module';
         AppRoutingModule,
     ],
     providers: [
-        AngularFirestore
+        AngularFirestore,
+        AuthService,
+        AuthGuard
     ],
     bootstrap: [
         AppComponent

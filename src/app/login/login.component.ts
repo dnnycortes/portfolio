@@ -72,7 +72,7 @@ export class LoginComponent implements OnInit {
      * @param value object with user's data
      */
     onLogin( value ) {
-        this.authService.doLogin( value )
+        this.authService.oAuthLogin( value )
         .then( res => {
             this.loginErrorMessage = '';
             this.router.navigateByUrl('/portfolio-admin');
