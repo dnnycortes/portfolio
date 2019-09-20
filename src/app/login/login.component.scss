@@ -46,3 +46,13 @@
         width: 100%;
     }
 }
+
+@media screen and ( max-width: $screen-small ) {
+    :host {
+
+        .login-card {
+            margin: 1rem;
+            min-width: inherit;
+        }
+    }
+}
