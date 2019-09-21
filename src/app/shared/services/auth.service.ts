@@ -10,7 +10,9 @@ import { Observable } from 'rxjs';
 export class AuthService {
     user$: Observable<firebase.User>;
 
-    constructor( public afAuth: AngularFireAuth ) {
+    constructor(
+        public afAuth: AngularFireAuth
+    ) {
         this.user$ = this.afAuth.authState;
     }
 
@@ -25,5 +27,12 @@ export class AuthService {
                 resolve( res );
             }, err => reject(err) );
         });
+    }
+
+    /**
+     * Function that logs out the user
+     */
+    logout() {
+        return this.afAuth.auth.signOut();
     }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../shared/services/auth.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class PortfolioAdminComponent implements OnInit {
-    constructor() { }
+    constructor(
+        private router: Router,
+        private authService: AuthService
+    ) { }
 
     ngOnInit() {
+    }
+
+    /**
+     * Function that connects to the service to log out the user
+     */
+    logout() {
+        this.authService.logout().then( () => {
+            this.router.navigateByUrl('/login');
+        });
     }
 
 }
