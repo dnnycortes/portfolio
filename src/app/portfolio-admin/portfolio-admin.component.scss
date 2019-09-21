@@ -38,23 +38,4 @@
         padding: 2rem;
         width: 100%;
     }
-
-    .content-header {
-        align-items: center;
-        display: flex;
-
-        h2 {
-            margin: 0;
-        }
-
-        .user-email {
-            align-items: center;
-            display: flex;
-            margin-left: auto;
-
-            button {
-                margin-left: .5rem;
-            }
-        }
-    }
 }

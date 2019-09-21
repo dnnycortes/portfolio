@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PortfolioAdminComponent } from './portfolio-admin.component';
 import { PortfolioAdminRouting } from './portfolio-admin.routing';
 import { MaterialModule } from '../shared/modules/material.module';
+import { AdminHeaderComponent } from './components/header/admin-header.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MaterialModule } from '../shared/modules/material.module';
         MaterialModule
     ],
     declarations: [
-        PortfolioAdminComponent
+        PortfolioAdminComponent,
+        AdminHeaderComponent
     ]
 })
 

@@ -1,0 +1,12 @@
+<div class="content-header">
+    <h2>Proyectos</h2>
+    <div class="user-email">
+        {{ currentUser?.email }}
+        <button mat-button [matMenuTriggerFor]="userOptions" class="btn icon">
+            <i class="material-icons"> keyboard_arrow_down</i>
+        </button>
+    </div>
+    <mat-menu #userOptions="matMenu">
+        <button mat-menu-item (click)="logout()">Log out</button>
+    </mat-menu>
+</div>
