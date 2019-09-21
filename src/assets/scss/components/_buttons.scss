@@ -50,6 +50,15 @@
             @include transition(0.4s);
         }
     }
+
+    &.icon {
+        align-items: center;
+        background: lighten( $light-color, 10% );
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        width: 32px;
+    }
 }
 
 button {

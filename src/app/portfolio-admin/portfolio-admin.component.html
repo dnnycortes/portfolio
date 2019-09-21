@@ -8,4 +8,18 @@
         </h1>
     </aside>
 
+    <div class="portfolio-content">
+        <div class="content-header">
+            <h2>Proyectos</h2>
+            <div class="user-email">
+                daniela.munozc@gmail.com
+                <button mat-button [matMenuTriggerFor]="userOptions" class="btn icon">
+                    <i class="material-icons"> keyboard_arrow_down</i>
+                </button>
+            </div>
+            <mat-menu #userOptions="matMenu">
+                <button mat-menu-item>Log out</button>
+            </mat-menu>
+        </div>
+    </div>
 </div>
