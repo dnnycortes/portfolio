@@ -88,6 +88,22 @@ button {
     &.twitter {
         background-image: url('assets/images/icon-twitter.png');
     }
+}
 
-    
+.link {
+
+    &.light {
+        color: white;
+    }
+
+    &.icon {
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+
+        i {
+            font-size: 1.5rem;
+            margin-right: .5rem;
+        }
+    }
 }
