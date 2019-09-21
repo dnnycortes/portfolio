@@ -23,6 +23,7 @@
             align-items: center;
             display: flex;
             justify-content: center;
+            margin-bottom: 3rem;
             text-indent: -99999px;
             width: 100%;
 
@@ -30,6 +31,44 @@
                 margin-right: .5rem;
                 max-width: 180px;
                 width: 100%;
+            }
+        }
+    }
+
+    .admin-nav {
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0; 
+
+            li {
+                margin-bottom: .5rem;
+                padding: .7rem 1rem;
+
+                a {
+                    color: $dark-color;
+                    display: block;
+                    height: 100%;
+                    text-decoration: none;
+                    widows: 100%;
+                }
+
+                &:hover {
+                    background: lighten( $light-color, 10% );
+                    border-radius: .25rem;
+                    color: $dark-color;
+                }
+
+                &.active {
+                    background: rgb(142,34,195);
+                    background: linear-gradient(86deg, rgba(142,34,195,1) 0%, rgba(253,45,231,1) 100%);
+                    border-radius: .25rem;
+
+                    a {
+                        color: white;
+                    }
+                }
             }
         }
     }
