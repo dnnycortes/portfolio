@@ -1,0 +1,36 @@
+@import "~assets/scss/helpers/variables";
+
+:host {
+
+    .wrapper {
+        background: #F6F5F8;
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .aside-nav {
+        background: white;
+        max-width: 248px;
+        min-width: 248px;
+        padding: 1.5rem 1rem;
+
+        > h1 {
+            margin: 0;
+        }
+
+        .logotype {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-indent: -99999px;
+            width: 100%;
+
+            img {
+                margin-right: .5rem;
+                max-width: 180px;
+                width: 100%;
+            }
+        }
+    }
+}
