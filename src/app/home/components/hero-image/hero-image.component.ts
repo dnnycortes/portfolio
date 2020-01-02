@@ -2,13 +2,13 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 
 @Component({
-    selector: 'cover-component',
-    templateUrl: './cover.component.html',
-    styleUrls: ['./cover.component.scss']
+    selector: 'hero-image-component',
+    templateUrl: './hero-image.component.html',
+    styleUrls: ['./hero-image.component.scss']
 })
 
 
-export class CoverComponent {
+export class HeroImageComponent {
     @Input() aboutInfo: Object;
     @Output() scrollDown: EventEmitter<string> = new EventEmitter;
 
