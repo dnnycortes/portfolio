@@ -26,13 +26,14 @@
                 font-size: 4.5rem;
                 font-weight: 700;
                 line-height: 5rem;
-                margin-left: -15%;
+                margin: 0 0 1.5rem -15%;
                 max-width: 225px;
                 text-align: right;
             }
         }
 
         .btn {
+            margin-top: 5rem;
 
             &.nav {
                 margin-left: auto;
