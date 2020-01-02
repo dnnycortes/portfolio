@@ -22,7 +22,7 @@
     }
 
     &.main {
-        background: $sec-color;
+        background: $main-color;
         color: white;
         font-size: 1rem;
         text-decoration: none;
@@ -30,9 +30,16 @@
         padding: 1rem 2rem;
 
         &:hover {
-            background: $sec-color;
+            background: $highlight-color;
             color: white;
             @include transition(0.4s);
+        }
+
+        &.icon-right {
+
+            img {
+                margin-left: 1rem;
+            }
         }
     }
 

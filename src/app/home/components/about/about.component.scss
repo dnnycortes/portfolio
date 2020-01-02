@@ -16,7 +16,7 @@
 
             .picture {
                 background: rgb(142,34,195);
-                background: linear-gradient(180deg, $sec-color 0%, $main-color 100%);
+                background: linear-gradient(180deg, $main-color 0%, $sec-color 100%);
                 max-height: 577px;
 
                 img {
