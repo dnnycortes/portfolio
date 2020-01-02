@@ -7,10 +7,4 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'bell';
-    src: url('assets/fonts/bell/bell-mt-webfont.woff2') format('woff2'),
-         url('assets/fonts/bell/bell-mt-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
