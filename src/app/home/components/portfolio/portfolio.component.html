@@ -1,5 +1,8 @@
 <div class="my-portfolio">
-    <h2>Checkout my work</h2>
+    <h2>
+        Checkout my work
+        <img src="assets/images/decoration-zig.png" alt="">
+    </h2>
 
     <div class="projects-list">
         <a class="project" *ngFor="let project of projects" href="javascript:void(0);" (click)="showProjectDetail(project)">
@@ -7,6 +10,9 @@
                 <img src="{{project.image}}" alt="">
             </div>
             <h4>{{ project.name }}</h4>
+            <div class="tags">
+                <p *ngFor="let tag of project.tags">{{ tag }},</p>
+            </div>
         </a>
     </div>
 </div>

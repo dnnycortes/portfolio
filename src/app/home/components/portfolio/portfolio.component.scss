@@ -10,7 +10,7 @@
 
         h2 {
             margin: 0;
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
             font-family: $main-font;
             font-size: 4.25rem;
             font-weight: 700;
@@ -23,8 +23,11 @@
 
             .project {
                 display: inline-block;
+                font-size: 1.25rem;
+                margin-bottom: 3.75rem;
                 text-align: center;
-                width: 37%;
+                text-decoration: none;
+                width: 44%;
                 
                 .thumb {
                     margin-bottom: -3px;
@@ -34,11 +37,29 @@
                 img {
                     margin-bottom: -4px;
                     transition: all 1s ease;
+                    width: 100%;
                 }
 
                 &:hover {
                     img {
                         transform: scale(1.1);
+                    }
+                }
+
+                h4 {
+                    color: $dark-color;
+                    font-family: $main-font;
+                    margin-bottom: .5rem;
+                }
+
+                .tags {
+                    color: $gray-color;
+                    display: flex;
+                    justify-content: center;
+
+                    p {
+                        font-size: 1rem;
+                        margin: 0 .25rem 0 .25rem;
                     }
                 }
             }
