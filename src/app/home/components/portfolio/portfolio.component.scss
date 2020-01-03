@@ -20,6 +20,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin-bottom: 6.25rem;
 
             .project {
                 display: inline-block;
@@ -62,6 +63,20 @@
                         margin: 0 .25rem 0 .25rem;
                     }
                 }
+            }
+        }
+
+        .other-projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+
+            h4 {
+                font-family: $main-font;
+                font-size: 2rem;
+                margin: 0 0 2.5rem 0;
+                width: 100%;
             }
         }
     }

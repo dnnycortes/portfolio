@@ -3,6 +3,8 @@
     border: 0;
     border-radius: 4px;
     display: inline-block;
+    font-family: $main-font;
+    font-weight: bolder;
     @include transition(0.4s);
 
     &.nav {
@@ -26,7 +28,6 @@
         color: white;
         font-size: 1rem;
         text-decoration: none;
-        text-transform: uppercase;
         padding: 1rem 2rem;
 
         &:hover {
@@ -44,17 +45,25 @@
     }
 
     &.secondary {
-        border: 1px solid $sec-color;
-        color: $sec-color;
+        background: $highlight-color;
+        color: white;
         font-size: 1rem;
         text-decoration: none;
-        text-transform: uppercase;
         padding: 1rem 2rem;
 
         &:hover {
-            background: $sec-color;
+            background: $main-color;
             color: white;
             @include transition(0.4s);
+        }
+
+        &.icon-right {
+            align-content: center;
+            display: flex;
+
+            img {
+                margin-left: 1rem;
+            }
         }
     }
 
