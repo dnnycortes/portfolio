@@ -67,8 +67,12 @@
             }
     
             .about-me-info {
-                padding: 2rem 2rem 0;
+                padding: 2rem 0;
                 width: 100%;
+
+                h2 {
+                    font-size: 3rem;
+                }
             }
         }
     }
@@ -86,7 +90,7 @@
             .about-me-info {
 
                 h2 {
-                    font-size: 3.5rem;
+                    font-size: 2.5rem;
                 }
 
                 .btn.main {

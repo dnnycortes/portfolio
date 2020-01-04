@@ -54,6 +54,35 @@
             header {
                 padding: 2rem 0;
             }
+
+            .message {
+
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: $screen-small ) {
+    :host {
+
+        .hero-image {
+
+            .message {
+
+                h2 {
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                    margin-left: 10%;
+                    max-width: 141px;
+
+                    img {
+                        max-width: 172px;
+                    }
+                }
+            }
         }
     }
 }

@@ -6,6 +6,7 @@
         margin: 0 auto;
         margin-top: 8rem;
         max-width: 1280px;
+        padding: 0 2rem;
         position: relative;
 
         h2 {
@@ -86,10 +87,10 @@
     :host {
         
         .my-portfolio {
-            margin-top: 3rem;
+            margin-top: 6rem;
 
             h2 {
-                text-align: center;
+                font-size: 3rem;
             }
 
             .projects-list {
@@ -109,7 +110,18 @@
         .my-portfolio {
 
             h2 {
-                font-size: 3.5rem;
+                font-size: 2.5rem;
+
+                img {
+                    max-width: 140px;
+                }
+            }
+
+            .other-projects {
+
+                h4 {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
