@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { environment } from '../environments/environment';
@@ -21,6 +21,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
     ],
     imports: [
         AngularFireModule.initializeApp( environment.firebase ),
+        AngularFirestoreModule,
         AngularFireDatabaseModule,
         AngularFireAuthModule,
         BrowserModule,
