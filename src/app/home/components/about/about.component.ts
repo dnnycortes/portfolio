@@ -10,7 +10,7 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 export class AboutComponent {
     @Input() technicalSkills: Array<Object>;
-    @Input() aboutInfo: Object;
+    @Input() aboutInfo;
     @Output() scrollDown: EventEmitter<string> = new EventEmitter;
 
     /**

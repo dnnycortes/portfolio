@@ -9,7 +9,7 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 
 export class HeroImageComponent {
-    @Input() aboutInfo: Object;
+    @Input() aboutInfo;
     @Output() scrollDown: EventEmitter<string> = new EventEmitter;
 
     onScroll( section: string ) {

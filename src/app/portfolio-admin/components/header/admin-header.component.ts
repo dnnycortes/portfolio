@@ -12,7 +12,7 @@ import { AuthService } from '../../../shared/services/auth.service';
 
 
 export class AdminHeaderComponent implements OnInit {
-    @Input() currentUser: Object;
+    @Input() currentUser;
 
     constructor(
         private router: Router,
