@@ -1,12 +1,18 @@
-<div class="dialog-head">
-    <h1 mat-dialog-title>{{ data.name }}</h1>
-    <button (click)="closeDialog()"><i class="material-icons">clear</i></button>
-</div>
 <div class="dialog-content">
     <div class="project-image">
         <img src="{{ data.imageMain }}">
     </div>
     <div class="project-info">
+        <button (click)="closeDialog()"><i class="material-icons">clear</i></button>
+        <h1 mat-dialog-title>{{ data.name }}</h1>
         <p>{{ data.description }}</p>
+        <img src="assets/images/decoration-zig.png" alt="">
+        <h2>What did I collaborate with?</h2>
+        <ul class="collaborate-list">
+            <li *ngFor="let work of data.collaboration">
+                <i class="material-icons"> done </i>
+                {{ work }}
+            </li>
+        </ul>
     </div>
 </div>
