@@ -1,7 +1,10 @@
 <div class="hero-image">
     <header>
         <h1 class="logo">
-            <a routerLink="/home">{{ aboutInfo?.name }}</a>
+            <a routerLink="/home">
+                {{ aboutInfo?.name }}
+                <p>{{ aboutInfo?.lastname }}</p>
+            </a>
         </h1>
         <button class="btn nav">
             <i class="material-icons">menu</i>
